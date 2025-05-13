@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘白 | 个人网站</title>
+    <meta name="description" content="刘白的个人网站 - 专业的全栈开发工程师">
+    <meta name="keywords" content="刘白, 开发, 工程师, 网站设计, 前端开发, 后端开发">
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+    
+    <!-- 引入外部字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景画布 -->
+    <canvas id="backgroundCanvas"></canvas>
+    
+    <!-- 页面加载动画 -->
+    <div class="page-loader">
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">刘白</a>
+            <div class="mobile-toggle">
+                <span class="icon icon-menu"></span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#about">关于我</a>
+                <a href="#projects">项目作品</a>
+                <a href="#skills">技能专长</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 首页英雄区 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">你好，我是刘白</h1>
+                <p class="fade-in fade-in-delay-1">AI编程实践者 | ComfyUI工作流设计师 | AIP | AI探索</p>
+                <div class="fade-in fade-in-delay-2">
+                    <a href="#projects" class="btn">查看我的作品</a>
+                </div>
+                <div class="social-links fade-in fade-in-delay-3">
+                    <a href="https://github.com/liubai-liubai" target="_blank">
+                        <img src="images/icons/github.svg" class="icon" alt="GitHub">
+                    </a>
+                    <div class="qrcode-wrapper">
+                        <a href="javascript:void(0)" class="qrcode-trigger">
+                            <img src="images/icons/wxgzh.svg" class="icon" alt="微信公众号">
+                        </a>
+                        <div class="qrcode-image">
+                            <img src="images/wxgzh.jpg" alt="微信公众号二维码">
+                        </div>
+                    </div>
+                    <div class="qrcode-wrapper">
+                        <a href="javascript:void(0)" class="qrcode-trigger">
+                            <img src="images/icons/wx.svg" class="icon" alt="微信">
+                        </a>
+                        <div class="qrcode-image wx-qrcode">
+                            <img src="images/wx.jpg" alt="微信二维码">
+                        </div>
+                    </div>
+                    <a href="https://x.com/yiliu1353616" target="_blank">
+                        <img src="images/icons/twitter.svg" class="icon" alt="Twitter">
+                    </a>
+                    <a class="icon-only copy-email" data-email="wyply116@gmail.com">
+                        <img src="images/icons/email.svg" class="icon" alt="Email">
+                    </a>
+                    <div class="qrcode-wrapper">
+                        <a href="javascript:void(0)" class="qrcode-trigger">
+                            <img src="images/icons/zhishixingqiu.png" class="icon" alt="社群">
+                        </a>
+                        <div class="qrcode-image wx-qrcode">
+                            <img src="images/zhishixingqiu.jpg" alt="知识星球">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 关于我区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2 class="section-title fade-in">关于我</h2>
+                <p class="fade-in fade-in-delay-1">
+                    我是一名充满激情的AI全栈开发工程师，拥有10年的行业经验。我热爱创建美观且功能强大的数字产品，并专注于提供卓越的用户体验。
+                </p>
+                <p class="fade-in fade-in-delay-1">
+                    我精通前端和后端开发技术，包括HTML、CSS、JavaScript、React、Node.js和Python等。在我的职业生涯中，我参与了多个成功的项目，从小型网站到大型企业应用程序不等。
+                </p>
+                <p class="fade-in fade-in-delay-2">
+                    除了编码，我还喜欢尝试新技术、参与开源项目，以及通过技术分享帮助他人成长。我相信技术的力量可以创造更美好的未来。
+                </p>
+                
+                <!-- 主要技能条 -->
+                <div class="fade-in fade-in-delay-2">
+                    <div class="skill-bar">
+                        <div class="skill-title">
+                            <span>小程序开发</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span data-percentage="95"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-title">
+                            <span>网站</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span data-percentage="85"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-title">
+                            <span>APP开发</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span data-percentage="80"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-image fade-in">
+                <img src="images/profile.jpg" alt="刘白的个人照片">
+            </div>
+        </div>
+    </section>
+    
+    <!-- 项目作品区域 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">项目作品</h2>
+            <div class="projects-intro fade-in fade-in-delay-1">
+                <p>这里展示了我最近完成的一些项目。每个项目都体现了我的技术能力和解决问题的思路。点击项目可以查看更多详情。</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- 项目1 -->
+                <div class="project-card fade-in fade-in-delay-1">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="AI图像转绘项目">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI图像转绘</h3>
+                        <p>一个通过AI大模型将用户上传的图片，转绘为吉卜力风格的小程序。</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="qrcode-wrapper">
+                                <a href="javascript:void(0)" class="qrcode-trigger">
+                                    访问小程序
+                                </a>
+                                <div class="qrcode-image">
+                                    <img src="images/AI-image.jpg" alt="AI绘画小程序二维码">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目2 -->
+                <div class="project-card fade-in fade-in-delay-2">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Emoji遮脸项目">
+                    </div>
+                    <div class="project-info">
+                        <h3>Emoji遮脸</h3>
+                        <p>一个多功能遮脸小程序，可以将用户上传图片中的所有人脸通过emoji表情包遮挡住。</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="qrcode-wrapper">
+                                <a href="javascript:void(0)" class="qrcode-trigger">
+                                    访问小程序
+                                </a>
+                                <div class="qrcode-image">
+                                    <img src="images/AI-image.jpg" alt="Emoji遮脸小程序二维码">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目3 -->
+                <div class="project-card fade-in fade-in-delay-3">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="社交媒体应用项目">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI图像转绘</h3>
+                        <p>一个通过AI大模型将用户上传的图片，转绘为动漫公主风格的小程序。</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="qrcode-wrapper">
+                                <a href="javascript:void(0)" class="qrcode-trigger">
+                                    访问小程序
+                                </a>
+                                <div class="qrcode-image">
+                                    <img src="images/AI-image.jpg" alt="AI绘画小程序二维码">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 技能专长区域 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">技能专长</h2>
+            <div class="skills-intro fade-in fade-in-delay-1">
+                <p>我擅长多种编程语言和技术，持续学习新技术以保持在行业前沿。以下是我的主要技能领域。</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- 前端开发 -->
+                <div class="skill-item fade-in fade-in-delay-1">
+                    <div class="skill-icon">
+                        <span class="icon icon-code"></span>
+                    </div>
+                    <h3 class="skill-name">前端开发</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js, Angular</p>
+                </div>
+                
+                <!-- 后端开发 -->
+                <div class="skill-item fade-in fade-in-delay-1">
+                    <div class="skill-icon">
+                        <span class="icon icon-server"></span>
+                    </div>
+                    <h3 class="skill-name">后端开发</h3>
+                    <p>Node.js, Python, Java, Express, Django, Spring</p>
+                </div>
+                
+                <!-- 数据库 -->
+                <div class="skill-item fade-in fade-in-delay-2">
+                    <div class="skill-icon">
+                        <span class="icon icon-database"></span>
+                    </div>
+                    <h3 class="skill-name">数据库</h3>
+                    <p>MongoDB, MySQL, PostgreSQL, Redis, Firebase</p>
+                </div>
+                
+                <!-- UI/UX设计 -->
+                <div class="skill-item fade-in fade-in-delay-2">
+                    <div class="skill-icon">
+                        <span class="icon icon-palette"></span>
+                    </div>
+                    <h3 class="skill-name">UI/UX设计</h3>
+                    <p>Figma, Adobe XD, Sketch, Photoshop, Illustrator</p>
+                </div>
+                
+                <!-- 移动开发 -->
+                <div class="skill-item fade-in fade-in-delay-3">
+                    <div class="skill-icon">
+                        <span class="icon icon-mobile"></span>
+                    </div>
+                    <h3 class="skill-name">移动开发</h3>
+                    <p>React Native, Flutter, Swift, Kotlin</p>
+                </div>
+                
+                <!-- 云服务 -->
+                <div class="skill-item fade-in fade-in-delay-3">
+                    <div class="skill-icon">
+                        <span class="icon icon-cloud"></span>
+                    </div>
+                    <h3 class="skill-name">云服务</h3>
+                    <p>AWS, Azure, Google Cloud, Docker, Kubernetes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页脚区域 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">刘白</div>
+            
+            <div class="footer-links">
+                <a href="#">首页</a>
+                <a href="#about">关于我</a>
+                <a href="#projects">项目作品</a>
+                <a href="#skills">技能专长</a>
+            </div>
+            
+            <div class="social-links footer-social">
+                <a href="https://github.com/liubai-liubai" target="_blank">
+                    <img src="images/icons/github.svg" class="icon" alt="GitHub">
+                </a>
+                <div class="qrcode-wrapper">
+                    <a href="javascript:void(0)" class="qrcode-trigger">
+                        <img src="images/icons/wxgzh.svg" class="icon" alt="微信公众号">
+                    </a>
+                    <div class="qrcode-image">
+                        <img src="images/wxgzh.jpg" alt="微信公众号二维码">
+                    </div>
+                </div>
+                <div class="qrcode-wrapper">
+                    <a href="javascript:void(0)" class="qrcode-trigger">
+                        <img src="images/icons/wx.svg" class="icon" alt="微信">
+                    </a>
+                    <div class="qrcode-image wx-qrcode">
+                        <img src="images/wx.jpg" alt="微信二维码">
+                    </div>
+                </div>
+                <a href="https://x.com/yiliu1353616" target="_blank">
+                    <img src="images/icons/twitter.svg" class="icon" alt="Twitter">
+                </a>
+                <a class="icon-only copy-email" data-email="wyply116@gmail.com">
+                    <img src="images/icons/email.svg" class="icon" alt="Email">
+                </a>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span class="current-year">2025</span> 刘白 - 个人网站。保留所有权利。
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 回到顶部按钮 -->
+    <div class="scroll-to-top">
+        <svg class="progress-ring" width="46" height="46">
+            <circle class="progress-ring-circle" stroke="var(--primary-color)" stroke-width="2" fill="transparent" r="20" cx="23" cy="23"/>
+        </svg>
+        <img src="images/icons/rocket.svg" class="rocket-icon" alt="回到顶部">
+    </div>
+
+    <!-- 脚本文件 -->
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,118 @@
+/* 
+ * 简易图标样式文件
+ * 基于Font Awesome风格的自定义图标
+ */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: -0.125em;
+}
+
+/* 移动端菜单图标 */
+.icon-menu::before {
+    content: '\2630'; /* Unicode汉堡图标 */
+}
+
+.icon-close::before {
+    content: '\2715'; /* Unicode关闭图标 */
+}
+
+/* 社交媒体图标 */
+.icon-github::before {
+    content: '\f09b'; /* Font Awesome风格的GitHub图标 */
+}
+
+.icon-linkedin::before {
+    content: '\f0e1'; /* Font Awesome风格的LinkedIn图标 */
+}
+
+.icon-twitter::before {
+    content: '\f099'; /* Font Awesome风格的Twitter图标 */
+}
+
+.icon-instagram::before {
+    content: '\f16d'; /* Font Awesome风格的Instagram图标 */
+}
+
+.icon-mail::before {
+    content: '\f0e0'; /* Font Awesome风格的邮件图标 */
+}
+
+/* 项目图标 */
+.icon-link::before {
+    content: '\f0c1'; /* Font Awesome风格的链接图标 */
+}
+
+.icon-code::before {
+    content: '\f121'; /* Font Awesome风格的代码图标 */
+}
+
+/* 联系图标 */
+.icon-phone::before {
+    content: '\f095'; /* Font Awesome风格的电话图标 */
+}
+
+.icon-location::before {
+    content: '\f3c5'; /* Font Awesome风格的位置图标 */
+}
+
+/* 技能图标 */
+.icon-code-branch::before {
+    content: '\f126'; /* Font Awesome风格的分支图标 */
+}
+
+.icon-database::before {
+    content: '\f1c0'; /* Font Awesome风格的数据库图标 */
+}
+
+.icon-palette::before {
+    content: '\f53f'; /* Font Awesome风格的调色板图标 */
+}
+
+.icon-mobile::before {
+    content: '\f3cd'; /* Font Awesome风格的手机图标 */
+}
+
+.icon-server::before {
+    content: '\f233'; /* Font Awesome风格的服务器图标 */
+}
+
+.icon-cloud::before {
+    content: '\f0c2'; /* Font Awesome风格的云图标 */
+}
+
+.icon-desktop::before {
+    content: '\f108'; /* Font Awesome风格的桌面图标 */
+}
+
+/* 动画效果图标 */
+.icon-chevron-down::before {
+    content: '\f078'; /* Font Awesome风格的向下箭头图标 */
+}
+
+.icon-check::before {
+    content: '\f00c'; /* Font Awesome风格的勾选图标 */
+}
+
+/* 修复浏览器兼容性问题 */
+@font-face {
+    font-family: 'IconFont';
+    src: url('data:font/truetype;charset=utf-8;base64,') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.fa {
+    font-family: 'IconFont', sans-serif;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+} 
